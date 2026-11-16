@@ -1,0 +1,28 @@
+.movie-grid {
+  width: 100%;
+}
+
+.movie-grid__heading {
+  margin: 0 0 1.5rem;
+  color: var(--color-text);
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.movie-grid__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.25rem;
+}
+
+@media (max-width: 1000px) {
+  .movie-grid__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .movie-grid__list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -3,7 +3,11 @@ import { GlobalContext } from "./GlobalContext";
 
 export function GlobalProvider({ children }) {
   const [darkMode, setDarkMode] = useState(false);
-  const toggleDarkMode = () => setDarkMode((v) => !v);
+  // const toggleDarkMode = () => setDarkMode((v) => !v);
+
+  function toggleDarkMode() {
+    setDarkMode(!darkMode);
+  }
 
   console.log('[GlobalProvider] render', { darkMode });
 

@@ -5,20 +5,22 @@ import Menu from "./Menu/Menu.jsx";
 import MainContentFragmentExplicito from "./MainContent/MainContentFragmentExplicito.jsx";
 import MenuProps from "./Menu/MenuProps.jsx";
 import MainContentFragmentImplicito from "./MainContent/MainContentFragmentImplicito.jsx";
+import Select from "./Select/Select.jsx";
 
 export default function App() {
 
     return (
         <div className="app-layout">
 
-            { /*<Menu/> */}
+            { /*<Navbar/> */}
             <MenuProps backgroundColor="red"/>
-            {/* <MenuPropsDestructuring backgroundColor="red"/> */}
+            {/*{<MenuPropsDestructuring backgroundColor="orange"/>}*/}
 
-            {  /* <MainContent/> */ }
+            {  /* <PageLayout/> */ }
             { /* <MainContentFragmentExplicito/> */}
             { <MainContentFragmentImplicito/> }
-
+            {/*{<Extra backgroundColor="bg_red" textColor="text_orange" textSize="large"/> }*/}
+            {<Select/> }
             <Footer/>
         </div>
     );

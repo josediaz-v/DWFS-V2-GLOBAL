@@ -302,7 +302,7 @@ export default function App() {
 ```jsx
 export default function Header() {
   const { userName, theme, toggleTheme } = useGlobalContext();
-  // Header está 1 nivel por debajo de AppProvider.
+  // Navbar está 1 nivel por debajo de AppProvider.
   // No necesita que App le pase userName ni theme como props.
   return (
     <header>

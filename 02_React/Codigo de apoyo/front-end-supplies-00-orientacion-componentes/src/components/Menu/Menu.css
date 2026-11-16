@@ -21,6 +21,10 @@
   background: #0b6200;
 }
 
+.menu.orange {
+  background: #f57c00;
+}
+
 .menu-list {
   list-style: none;
   padding: 60px 0 0 0;

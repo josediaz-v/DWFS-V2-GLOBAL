@@ -5,7 +5,7 @@ export default function MainContent() {
     const [email, setEmail] = useState("");
     const [error, setError] = useState("");
 
-    console.log('[MainContent] render', { email, error });
+    console.log('[PageLayout] render', { email, error });
 
     function validateEmail(email) {
         // Expresión regular simple para validar email

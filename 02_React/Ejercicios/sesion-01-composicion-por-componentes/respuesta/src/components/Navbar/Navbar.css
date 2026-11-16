@@ -1,0 +1,75 @@
+.navBar,
+.navbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.75rem clamp(1rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+}
+
+.navBar::before {
+  flex: 0 0 auto;
+  color: var(--color-text);
+  content: "🎬 CineReact";
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.navbar__logo {
+  flex: 0 0 auto;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.navBar-list,
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navBar-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar-list a,
+.navbar__link {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  transition: color 160ms ease;
+}
+
+.navBar-list a:hover,
+.navbar__link:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 560px) {
+  .navBar,
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 0.9rem;
+  }
+
+  .navBar-list,
+  .navbar__links {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+  }
+}

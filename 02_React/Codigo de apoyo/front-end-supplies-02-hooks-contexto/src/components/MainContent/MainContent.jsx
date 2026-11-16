@@ -7,7 +7,7 @@ export default function MainContent() {
     const [error, setError] = useState("");
     const { darkMode } = useContext(GlobalContext);
 
-    console.log('[MainContent] render', { email, error, darkMode });
+    console.log('[PageLayout] render', { email, error, darkMode });
 
     function validateEmail(email) {
         // Expresión regular simple para validar email

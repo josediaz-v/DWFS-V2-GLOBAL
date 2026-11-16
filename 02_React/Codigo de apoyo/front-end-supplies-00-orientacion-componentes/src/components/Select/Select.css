@@ -1,0 +1,22 @@
+.select {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.select.style1{
+    background: #f57c00;
+    color: #830202;
+    font-size: 1rem;
+}
+
+.select.style2{
+    background: #830202;
+    color: #f57c00;
+    font-size: 2rem;
+}
+
+.select.style3{
+    background: #1a1a2e;
+    color: #0b6200;
+    font-size: 3rem;
+}

@@ -55,7 +55,7 @@ export default function SupportChat() {
       {/* Ventana del chat */}
       {isOpen && (
         <div className="chat-window">
-          {/* Header del chat */}
+          {/* Navbar del chat */}
           <div className="chat-header">
             <h3>Chat de Soporte</h3>
             <div className="chat-status">

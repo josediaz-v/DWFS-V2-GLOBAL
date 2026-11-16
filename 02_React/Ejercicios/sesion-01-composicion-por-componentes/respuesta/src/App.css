@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.app > .navBar,
+.app > .navbar {
+  flex: 0 0 auto;
+}
+
+.app > .main-content,
+.app > .page-layout {
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  .app {
+    min-height: 100svh;
+  }
+}
