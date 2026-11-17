@@ -1,0 +1,39 @@
+.animal-grid__loading {
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: var(--muted);
+}
+
+.animal-grid__spinner {
+  font-size: 2.5rem;
+  animation: animal-bounce 750ms ease-in-out infinite alternate;
+}
+
+@keyframes animal-bounce {
+  to {
+    transform: translateY(-9px);
+  }
+}
+
+.animal-grid__count {
+  margin-bottom: 0.9rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 190px), 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animal-grid__spinner {
+    animation: none;
+  }
+}

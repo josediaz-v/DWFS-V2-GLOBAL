@@ -1,0 +1,79 @@
+.animal-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1.2rem;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition), background-color var(--transition);
+}
+
+.animal-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 65%, var(--border));
+  box-shadow: 0 14px 34px rgb(0 0 0 / 18%);
+  transform: translateY(-3px);
+}
+
+.animal-card--fav {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), var(--shadow);
+}
+
+.animal-card__emoji {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  font-size: 3rem;
+  line-height: 1;
+  background: var(--surface-raised);
+  border-radius: 50%;
+}
+
+.animal-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.animal-card__name {
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 750;
+}
+
+.animal-card__breed,
+.animal-card__age {
+  color: var(--muted);
+  font-size: 0.83rem;
+}
+
+.animal-card__fav-btn {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition), border-color var(--transition);
+}
+
+.animal-card__fav-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.animal-card__fav-btn--active {
+  color: #fff;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+}

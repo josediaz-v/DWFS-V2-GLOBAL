@@ -1,0 +1,29 @@
+.render-counter,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.render-counter__badge,
+.footer > span:first-child {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.render-counter__badge strong,
+.footer > span:first-child strong {
+  color: var(--accent);
+}
+
+.render-counter__hint,
+.footer > span:last-child {
+  color: var(--muted);
+  font-size: 0.76rem;
+  opacity: 0.8;
+}

@@ -1,72 +1,63 @@
-.navBar,
 .navbar {
-  position: relative;
-  z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
-  min-height: 72px;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 0.75rem clamp(1rem, 4vw, 2.5rem);
-  border-bottom: 1px solid var(--color-border);
-  background: var(--color-surface);
+  height: 64px;
+  padding: 0 2rem;
+  background-color: var(--color-surface);
+  border-bottom: 2px solid var(--color-primary);
   box-shadow: var(--shadow);
 }
 
-.navBar::before {
-  flex: 0 0 auto;
-  color: var(--color-text);
-  content: "🎬 CineReact";
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
 .navbar__logo {
-  flex: 0 0 auto;
-  color: var(--color-text);
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--color-primary);
+  font-size: 1.4rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-.navBar-list,
+.navbar__logo span:last-child {
+  color: var(--color-text);
+}
+
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: clamp(1rem, 3vw, 2rem);
-  margin: 0;
-  padding: 0;
+  gap: 2rem;
   list-style: none;
 }
 
-.navBar-list li {
-  margin: 0;
-  padding: 0;
-}
-
-.navBar-list a,
 .navbar__link {
   display: block;
-  padding: 0.5rem 0;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
   color: var(--color-text-muted);
   font-size: 0.95rem;
-  transition: color 160ms ease;
+  font-weight: 500;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.navBar-list a:hover,
 .navbar__link:hover {
-  color: var(--color-accent);
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
 }
 
 @media (max-width: 560px) {
-  .navBar,
   .navbar {
-    align-items: flex-start;
     flex-direction: column;
-    gap: 0.5rem;
-    padding-block: 0.9rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.4rem;
+    height: auto;
+    padding: 0.8rem 1rem;
   }
 
-  .navBar-list,
   .navbar__links {
     width: 100%;
     flex-wrap: wrap;

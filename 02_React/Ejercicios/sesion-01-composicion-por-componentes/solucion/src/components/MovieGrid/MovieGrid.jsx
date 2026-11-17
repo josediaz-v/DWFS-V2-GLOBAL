@@ -7,7 +7,7 @@ export default function MovieGrid({ movies }) {
       <h2 className="movie-grid__heading">🎬 Estrenos de la semana</h2>
       <div className="movie-grid__list">
         {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
+            <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
     </section>

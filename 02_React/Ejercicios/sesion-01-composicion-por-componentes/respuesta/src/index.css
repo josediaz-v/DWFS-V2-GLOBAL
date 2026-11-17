@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", system-ui, sans-serif;
   color: #eaeaea;
   background: #0f0f13;
   font-synthesis: none;
@@ -12,21 +18,13 @@
   --color-primary: #e63946;
   --color-primary-dark: #c1121f;
   --color-text: #eaeaea;
-  --color-text-muted: #a0a0b0;
+  --color-text-muted: #8d8da6;
   --color-accent: #f4a261;
 
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 18px;
-  --shadow: 0 4px 24px rgb(0 0 0 / 35%);
-
-  font-optical-sizing: auto;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -39,6 +37,8 @@ body {
   min-height: 100vh;
   margin: 0;
   line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 button,
@@ -49,6 +49,10 @@ a {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 button:focus-visible,

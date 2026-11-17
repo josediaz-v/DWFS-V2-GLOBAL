@@ -5,14 +5,8 @@
   background: var(--color-bg);
 }
 
-.app > .navBar,
-.app > .navbar {
-  flex: 0 0 auto;
-}
-
-.app > .main-content,
-.app > .page-layout {
-  flex: 1;
+#root {
+  min-height: 100vh;
 }
 
 @media (max-width: 700px) {
